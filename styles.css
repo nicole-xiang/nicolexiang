@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    /* line-height: ; */
+    background-color:#F8EDEB;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+li {
+    display:inline-block;
+    padding:0 1%;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+#navBar {
+    background-color:black;
+    height:50px;
+}
+#miniMenu {
+    display:none;
+}
+#navBar ul {
+    margin:0 auto;
+    /* margin-left: -1%; */
+}
+
+#navBar img {
+    width: 40px;
+    float:left;
+    margin:0.5%;
+}
+.menu {
+    visibility:visible;
+    display:block;
+}
+.menu li {
+    padding:5% auto;
+    margin:12.5px auto;
+}
+.menu a {
+    color:#F4E4E1;
+}
+.menu a:hover{
+    text-decoration: underline;
+    text-underline-offset:10px;
+}
+
+#page {
+    width:90%;
+    margin:auto; 
+    text-align: center;
+}
+#page .subTitle{
+    font-size:220%;
+    font-style: italic;
+    background-color: #FAE1DD;
+    width:50%;
+    margin:0% auto;   
+    margin-bottom: 2%;
+}
+#page h1 {
+    font-size: 400%;
+    font-weight:bold;
+    margin:2% auto;
+}
+#page .productName{
+    font-weight: 900px;
+    font-style: italic;
+    /* padding: 1% auto;
+    padding-bottom: 0;
+    margin-bottom: 0; */
+}
+.video{
+    width: 700px;
+    height: 455px;
+    padding-bottom: 5%;
+}
+.collection{
+    margin-left:3.75%;
+}
+.collection::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+figcaption {
+    margin:0 auto;
+}
+.product {
+    float: left;
+    width: 30%;
+    padding: 0.5%;
+}
+.med {
+    display:none;
+}
+.product img {
+    width:80%;
+    margin:auto;
+}
+.descrip {
+    color:#6e3126;
+}
+.buy {
+    border:solid white 1px;
+    border-radius: 25px;
+    padding:1.5% 2%;
+    background:#B51D03;
+    color:#F4E4E1;
+    font-weight: lighter;
+    font-size:90%;
+}
+.learnMore {
+    border:solid #B51D03 1px;
+    border-radius: 25px;
+    padding:1.5% 2%;
+    background:white;
+    color:#A64B3A;
+    font-weight: lighter;
+    font-size:90%;
+}
+.buy:hover {
+    color:#A64B3A;
+    background:white;
+}
+.learnMore:hover {
+    color:white;
+    background:#B51D03;
+}
+
+footer {
+    text-align: center;
+    line-height: 5px;
+    color:#FFE5D9;
+    background-color:black;
+    padding:2%;
+}
+.footer-menu{
+    padding:1%;
+    /* margin: 2% auto; */
+}
+footer a {
+    color:#FFE5D9;
+}
+
+/* medium */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    figcaption{
+        text-align: left;
+        margin-left: 10%;
+    }
+    #page .subTitle{
+        font-size: 200%;
+        width:50%;
+    }
+    
+    .product {
+        float: none;
+        width: 100%;
+        padding: 1%;
+    }
+    .large {
+        display:none;
+    }
+    .med {
+        display:block;
+        visibility:visible;
+    }
+    .collection{
+        margin:0 auto;
+        margin-right:2%;
+    }
+}
+/* small */
+@media screen and (max-width: 767px){
+    #page h1{
+        font-size:300%;
+    }
+    .menu {
+        display:none;
+    }
+    #logo img{
+        width:40px;
+        float:none;
+        display:block;
+        margin:0 auto;
+        padding-top:0.5%;
+    }
+    #miniMenu{
+        visibility:visible;
+        display:block;
+        float:right;  
+        margin-right:4%; 
+        margin-top: -40px; 
+    }
+   
+    .video {
+        width:80%;
+    }
+    #page .subTitle{
+        font-size: 130%;
+        width:40%;
+    }
+    figcaption{
+        text-align: left;
+        margin-left: 10%;
+    }
+    figcaption h4{
+        font-size: 80%;
+    }
+    .product {
+        float: none;
+        width: 100%;
+        padding: 1%;
+    }
+    .large {
+        display:none;
+    }
+    .med {
+        display:block;
+        visibility:visible;
+    }
+    .collection{
+        margin-right:5%;
+    }
+}
